@@ -1,7 +1,6 @@
-
 #include<stdio.h>
 int main(){
-  int i,num;
+  int num;
   scanf("%d", &num);
-  for(i=0;i<num;i++)
+  printf("%d", num*(num+1)*(num+2));
 }
