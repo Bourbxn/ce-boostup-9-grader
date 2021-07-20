@@ -1,10 +1,20 @@
 #include<stdio.h>
 int main(){
-  int mass,week,dayleft;
+  char input[100];
+  int mass,week,dayleft,i=0;
   double prc,losswght,day;
-  scanf("%d", &mass);
+  scanf("%s",input);
+  while(input[i]!='\0'){
+  if(input[i]<48||input[i]>57){
+    printf("ERROR");
+    return 0;
+      }
+    i++;
+  }
+  sscanf(input, "%ld", &mass);
   if(mass<=0){
     printf("ERROR");
+    return 0;
   }
   else{
     losswght = 0.1*mass;
