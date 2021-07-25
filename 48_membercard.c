@@ -3,7 +3,7 @@ int main(){
   char id[100],name[100],cat[100];
   int i=0,j=0,k=0;
   scanf("%s", &id);
-  scanf("%s", &name);
+  scanf("%s",&name);
   scanf("%s", &cat);
   while(id[++i]!='\0');
   while(name[++j]!='\0');

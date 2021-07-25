@@ -33,6 +33,6 @@ int main(){
       if(intin%9==0)check++;
     }
   }
-  if(check==a)printf("true");
-  else{printf("false");}
+  if(check==a)printf("TRUE");
+  else{printf("FALSE");}
 }

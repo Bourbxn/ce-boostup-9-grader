@@ -1,18 +1,25 @@
 #include<stdio.h>
 int main(){
-  long int year,ad;
-  scanf("%ld", &year);
-  ad=year-543;
-  if(ad<0){
-    printf("error");
-  }
-  else{
-    if(ad%4==0){
-      printf("365");
-    }
-    else{
-      printf("366");
-    }
-  }
+	int n;
+	scanf("%d",&n);
+	int a = n , b = n ;
+	for(int i=1;i<=2*(n-1)+1;i++){
+		for(int j=1;j<=2*(n-1)+1;j++){
+			if(j==a||j==b){
+				printf("*");
+			}
+			else{
+				printf(" ");
+			}
+		}
+		if(i<n){
+			a--; b++;
+		}
+		else{
+			a++; b--;
+		}
 
+		printf("\n");
+	}
+	return 0;
 }
